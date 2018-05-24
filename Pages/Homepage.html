@@ -1,0 +1,91 @@
+<!doctype html>
+<html ng-app="myMod">
+  <head>
+    <title>Home Page</title>
+    <script src="JavaScript/angular.min.js"></script>
+    <script src="JavaScript/angular-route.js"></script>
+      <link href="../CSS/Homepage.css" rel="stylesheet" type="text/css">
+      <script>
+          var modal = document.getElementById('id01');
+          
+         
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+  </head>
+
+<body>
+    <div id="mainWrapper" class="ui container">
+      <header> 
+          <div id="logo">  INVENTORY MANAGEMENT SYSTEM</div>
+          <div id="headerLinks"><button onclick="document.getElementById('id01').style.display='block'" title="Login/Register" class="ui flowing popup right transition">Login/Register</button></div>
+      </header>
+
+      <div id="id01" class="modal" ng-controller="entityData">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Form">&times;</span>
+          <h1>Registration....</h1>
+  
+          <form>
+              First Name: <input type="text" placeholder="First" id="fname" ng-model="fName"><br />
+              Middle Name: <input type="text" placeholder="Middle" id="mname" ng-model="mName"><br />
+              Last Name: <input type="text" placeholder="Last" id="lname" ng-model="lName"><br /><hr>
+  
+              <fieldset id="fs1">
+                  <legend><u>Contacts</u></legend><br />
+                  Phone: <input type="number" placeholder="987654321" ng-model="phone"><br/>
+                  Email: <input type="email" placeholder="xyz@gmail.com" ng-model="email"><br />
+              </fieldset><br /><br />
+  
+              <fieldset id="fs2">
+                  <legend><u>Company Details</u></legend><br />
+                  Company Name: <input type="text" ng-model="name"><br />
+                  Company Number: <input type="number" ng-model="number"><br />
+                  Company Email: <input type="email" ng-model="mail"><br />
+              </fieldset>
+  
+              <input type="submit" value="submit" id="btn" ng-click="register()">        
+          
+          </form>
+      </div> 
+
+
+
+
+
+      <section id="offer"> 
+            <h2>Login Page</h2>
+            <p>Please Register/Login to make requests.</p>
+      
+      </section>
+        <div id="content">
+          <section class="mainContent">
+		        <div class="productRow">
+              <article class="productInfo">
+                  <div><img alt="sample" src="../Images/request.jpg" width="500px" height="300px"></div>
+                    <p class="productContent">REQUESTOR</p>
+                    <a class="select" href="#!User Page">SELECT</a>
+              </article>
+              
+              <article class="productInfo">
+                <div><img alt="sample" src="../Images/Approver.jpg" width="700px" height="300px"></div>
+                  <p class="productContent">APPROVER</p>
+                  <a class="select" href="#!Approver Page">SELECT</a>
+              </article>
+        
+              <article class="productInfo">
+                <div><img alt="sample" src="../Images/Admin.jpg" width="500px" height="300px"></div>
+                  <p class="productContent">SUPER ADMIN</p>
+                  <a class="select" href="#!Super Admin">SELECT</a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+ 
+ 
+    </body>
+
+  </html>

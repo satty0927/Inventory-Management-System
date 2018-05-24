@@ -1,0 +1,255 @@
+body{
+	position: relative;
+	z-index: -1;
+}
+
+button:hover {
+	color: black;
+}
+
+
+#logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 300px;
+	text-align: center;
+	color: floralwhite;
+	background-color:grey;
+}
+
+#headerLinks {
+	position: relative;
+	right: 120px;
+	float: right;
+	width:20px;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: chartreuse;
+	background-color: rgba(255,255,255,1.00);
+}
+
+button {
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 66px;
+	font-size: 14px;
+}
+
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	color:black;
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+
+#content {
+	position:center;
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+}
+
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+}
+
+.productRow .productInfo {
+	font-family: 'Montserrat', sans-serif;
+	color: blanchedalmond;
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: black;
+	white-space: pre-wrap;
+}
+
+.productRow .productInfo .select {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	padding: 3px;
+	background-color: snow;
+	height: 35px;
+	color: black;
+	border-style: double;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+
+
+.productInfo div img {
+	width: 100%;
+}
+
+#menubar .menu ul {
+	display: inline;
+}
+
+
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+
+#mainWrapper #offer p {
+	font-size: small;
+}
+
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+header #headerLinks button {
+	padding-left: 0px;
+	padding-right: 30px;
+	width: 120px;
+	height: 40px;
+}
+
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+
+@media screen and (max-width:480px) {
+
+	
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(190,190,190,1.00);
+	padding-bottom: 21px;
+}
+
+
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+
+
+header #headerLinks button{
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+
+
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+
+
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+
+
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+
+
+#mainWrapper {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+
+
+
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
+
+.modal {
+    display: none; 
+    position: sticky;
+	z-index: 1; 
+	height: 500px;
+	width: 600px;
+    left: 30px;
+    top: 30px;
+    overflow: auto;
+    background-color: rgba(59, 121, 255, 0.781) ;
+    padding-top: 50px;
+}
+
+span{
+	font-size: 30px;
+	float: right;
+	font-weight: 400;
+}
+
+	form{
+	   position: relative;
+	   top: 30px;
+   }
+   
+   #fs1{
+	   position: relative;
+	   top:10px;
+   }
+   
+   #fs2{
+	   position: relative;
+	   top: 20px;
+   }
+   
+   #fname #lname{
+	   position: relative;
+	   right: 10px;
+   }
+   
+   #btn{
+	   position: relative;
+	   left: 400px;
+	   top: 80px;
+	   height: 30px;
+	   width: 90px;
+	   
+   }

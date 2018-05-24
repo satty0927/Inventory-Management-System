@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="myMod">
+    <head>
+        <title>Add Item</title>
+        <script src="../JavaScript/angular.min.js"></script>
+        <script src="../JavaScript/angular-route.min.js"></script>
+        <script src="../JavaScript/semantic.min.js"></script>
+        <script src="../Script/app.js"></script>
+        <link rel="stylesheet" href="../CSS/semantic.min.css">
+    </head>
+
+    <body>
+        <div class="ui container">
+        <h1>ADD ITEMS</h1>
+
+        <div ng-controller="addItems">
+            <form class="ui form">
+                <div class="ui field">
+                    <label>Item Name</label><input type="text" placeholder="Item" class="ui input" ng-model="iName">
+                </div>
+                <div class="ui field">
+                    <label>Available units</label><input type="number" placeholder="in units" class="ui input" ng-model="iUnits">
+                </div>
+                <div class="ui field">
+                    <label>Item Category</label><select ng-model="iCategory">
+                        <option>Electronics</option>
+                        <option>Hardware Equipment</option>
+                        <option>Tools</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="STORE" class="ui button" ng-click="drop()">
+
+            </form>
+        </div>
+
+    </div>
+    </body>
+</html>

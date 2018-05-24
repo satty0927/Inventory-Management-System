@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="myMod">
+    <head>
+        <title>All Requests</title>
+        <script src="../JavaScript/angular.min.js"></script>
+        <script src="../Script/app.js"></script>
+        <script src="../JavaScript/semantic.min.js"></script>
+        <link rel="stylesheet" href="../CSS/My Requests.css">
+        <link rel="stylesheet" href="../CSS/semantic.min.css">
+    </head>
+
+    <body>
+        <h1><u><em>Requests....</em></u></h1>
+
+        <div class="ui container"></div>
+            <table border="1px" ui table>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Company Email</th>
+                    <th>Company Contacts</th>
+                    <th>Requestor Name</th>
+                    <th>Requestor Email</th>
+                    <th>Item Name</th>
+                    <th>Item Quantity(In units)</th>
+                    <th>Approval Status</th>
+                </tr>
+                <tr ng-repeat="x in $root.form">
+                    <td>{{x.CompName}}</td>
+                    <td>{{x.CompEmail}}</td>
+                    <td>{{x.CompContacts}}</td>
+                    <td>{{x.ReqName}}</td>
+                    <td>{{x.ReqEmail}}</td>
+                    <td>{{x.ItemName}}</td>
+                    <td>{{x.ItemQuantity}}</td>
+                    <td><em>{{x.Status}}</em></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

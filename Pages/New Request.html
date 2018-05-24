@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myMod">
+<head> 
+        <script src="../JavaScript/angular.min.js"></script>
+        <script src="../JavaScript/angular-route.min.js"></script>
+        <script src="../JavaScript/jquery.min.js"></script>
+        <script src="../Script/app.js"></script>
+        <link rel="stylesheet" href="../CSS/New Request.css">
+        <link rel="stylesheet" href="../CSS/semantic.min.css">
+        <script src="../JavaScript/semantic.min.js"></script>
+</head>
+<body ng-controller="myControl">
+    <div class="ui container">
+        <h2>New Request</h2><br /><hr />
+
+        <form class="ui form">
+            <div class="Details required">
+                <fieldset class="companyDetails"> <legend class="legend">Company Data</legend>
+                    <div class="ui input icon left required">
+                     <label id="labcName"> Company Name: </label> <input type="text" placeholder="Company's name" id="cName" ng-model="CompanyName">
+                     <label id="labcEmail"> Company Email:</label> <input type="email" placeholder="xyz@gmail.com" id="cEmail" ng-model="CompanyEmail">
+                     <label id="labcContacts"> Company Contacts:</label> <input type="text" placeholder="0000000000" id="cContacts" ng-model="CompanyContacts">
+                    </div>
+                </fieldset>
+
+                <fieldset class="personalDetails"><legend class="legend">Personal Data</legend>
+                <div class="ui input icon left">
+                  <label id="labpName">Requestor's Name</label><input type="text" placeholder="Full" id="pName" ng-model="RequestorName">
+                  <label id="labpEmail">Requestor's Email</label><input type="email" placeholder="Personal Email" id="pEmail" ng-model="RequestorEmail">
+                </div>
+                </fieldset>
+                <fieldset id="itemData"><legend>Item Data</legend>
+                        <label>Item Name</label>
+                        <select ng-model="ItemName" id="iName" class="ui dropdown" >
+                            <option ng-repeat="i in $root.items">{{i.ItemName}}</option>
+                        </select><br/>
+
+                        <label>Quantity</label><input type="number" placeholder="in units" ng-model="ItemQuantity" id="iQuantity" class="ui numeric">
+                    </div>
+                </fieldset>
+            </div>
+
+            <button class="ui basic center button" id="submit" data-tooltip="Click to make request" ng-click="storage()">
+              SUBMIT
+            </button>
+        </form>
+    </div>
+
+    </ul>
+</body>
+</html>

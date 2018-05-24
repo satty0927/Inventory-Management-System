@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="myMod">
+    <head>
+        <title>All Items Availibilty</title>
+        <script src="../JavaScript/angular.min.js"></script>
+        <script src="../Script/app.js"></script>
+        <script src="../JavaScript/semantic.min.js"></script>
+        <link rel="stylesheet" href="../CSS/semantic.min.css">
+    </head>
+
+    <body class="ui container">
+        <h1><u><em>Items Availibilty....</em></u></h1>
+
+        <div class="ui table center">
+            <table>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Quantity</th>
+                    <th>Item Category</th>
+                </tr>
+                <tr ng-repeat="x in $root.items">
+                    <td>{{x.ItemName}}</td>
+                    <td>{{x.ItemQuantity}}</td>
+                    <td>{{x.ItemCategory}}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

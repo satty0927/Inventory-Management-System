@@ -1,0 +1,53 @@
+body{
+ line-height: 3px;
+ background-color: cornsilk;   
+}
+
+form{
+    position: relative;
+    top: 30px;
+}
+
+#fs1{
+    position: relative;
+    top:10px;
+}
+
+#fs2{
+    position: relative;
+    top: 20px;
+}
+
+#fname #lname{
+    position: relative;
+    right: 10px;
+}
+
+#btn{
+    position: relative;
+    left: 600px;
+    top: 80px;
+    height: 30px;
+    width: 90px;
+    
+}
+
+#fname{
+    position: relative;
+    left: 20px;
+}
+
+#mname{
+    position: relative;
+    left: 7px;
+}
+
+#lname{
+    position: relative;
+    left: 24px;
+}
+
+.contacts{
+    position: relative;
+    left: 20px;
+}

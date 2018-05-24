@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Blippo, fantasy;
+  }
+
+  button:hover {
+	color: rgba(255,255,255,1.00);
+}
+
+button {
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 66px;
+	font-size: 14px;
+}
+
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	color: whitesmoke;
+	padding: 3px;
+	border-style: double;
+	font-size: 14px;
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+
+#content {
+	position:center;
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+}
+
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+}
+
+.productRow .productInfo {
+	font-family: 'Montserrat', sans-serif;
+	color: coral;
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: black;
+	white-space: pre-wrap;
+}
+
+.productRow .productInfo .select {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: burlywood;
+	height: 35px;
+	color: black;
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+
+.productInfo div img {
+	width: 100%;
+}

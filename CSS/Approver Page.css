@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+h1{
+    position: relative;
+    left: 300px;
+    font-size: 50px;
+}
+
+table{
+    position: relative;
+    left: 100px;
+}
+
+td{
+    padding: 10px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+}
+
+#missing{
+    position: relative;
+    left:40px;
+}

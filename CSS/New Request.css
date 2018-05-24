@@ -1,0 +1,80 @@
+h2{
+    position: relative;
+    left: 480px;
+    top: 20px;
+    font-family: fantasy;
+}
+
+
+#cName{
+    width: 250px;
+}
+
+#cEmail{
+    position: relative;
+    left: 50px;
+    width: 250px;
+}
+#cContacts{
+    position: relative;
+    left: 90px;
+    float: right;
+    width: 140px;
+}
+
+#labcName{
+    position: relative;
+}
+
+#labcEmail{
+    position: relative;
+    left: 30px;
+}
+
+#labcContacts{
+    position: relative;
+    left: 70px;
+}
+
+
+#pName{position: relative;
+    left: 30px;
+    width: 300px;
+}
+
+#pEmail{
+    position: relative;
+    left: 100px;
+    width: 250px;
+}
+
+#labpName{
+    position: relative;
+}
+
+#labpEmail{
+    position: relative;
+    left: 70px;
+}
+
+
+.companyDetails{
+    height: 90px;
+}
+
+.personalDetails{
+    position: relative;
+    top: 30px;
+}
+
+#submit{
+    position: relative;
+    top: 90px;
+    left: 300px;
+    width: 100px;
+}
+
+#itemData{
+    position: relative;
+    top: 50px;
+}

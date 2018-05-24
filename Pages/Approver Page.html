@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="myMod">
+    <head>
+        <title>All Requests</title>
+        <script src="../JavaScript/angular.min.js"></script>
+        <script src="../JavaScript/semantic.min.js"></script>
+        <script src="../Script/app.js"></script>
+        <link rel="stylesheet" href="../CSS/Approver Page.css">
+        <link rel="stylesheet" href="../CSS/semantic.min.css">
+    </head>
+
+    <body>
+        <h1><u><em>Requests....</em></u></h1>
+
+        <div ng-controller="buttonControl">
+            <table border="2px">
+                <tr>
+                    <th>Company Name</th>
+                    <th>Company Email</th>
+                    <th>Company Contacts</th>
+                    <th>Requestor Name</th>
+                    <th>Requestor Email</th>
+                    <th>Item Name</th>
+                    <th>Item Quantity(In units)</th>
+                    <th>Approval Status</th>
+                </tr>
+                <tr ng-repeat="x in $root.form">
+                    <td>{{x.CompName}}</td>
+                    <td>{{x.CompEmail}}</td>
+                    <td>{{x.CompContacts}}</td>
+                    <td>{{x.ReqName}}</td>
+                    <td>{{x.ReqEmail}}</td>
+                    <td>{{x.ItemName}}</td>
+                    <td>{{x.ItemQuantity}}</td>
+                    <td><input type="button" ng-click="approve(x)" value="APPROVE" class="btn">//<input type="button" ng-click="reject(x)" value="REJECT" class="btn"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div ng-show="$root.form.length==0?true:false">
+            <article id="missing">No Request Found</article>
+        </div>
+    </body>
+</html>
